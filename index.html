@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Barbearia Imperial</title>
+
+    <link rel="stylesheet" href="barbearia-imperial.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            BARBEARIA <span>IMPERIAL</span>
+        </div>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#contato">Contato</a>
+        </nav>
+
+        <a href="#agendamento" class="btn-agendar">
+            Agendar horário
+        </a>
+
+<button class="menu-mobile" aria-label="Abrir menu">
+    ☰
+</button>
+
+</header>
+
+
+
+    <main>
+
+        <section id="inicio" class="hero">
+
+            <div class="hero-text">
+
+                <p class="subtitulo">
+                    ESTILO • PRECISÃO • TRADIÇÃO
+                </p>
+
+                <h1>
+                    Seu estilo começa
+                    <span>na cadeira.</span>
+                </h1>
+
+                <p>
+                    Cortes modernos, barba e aquele acabamento
+                    impecável para você sair daqui renovado.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#agendamento" class="btn-principal">
+                        Agendar horário
+                    </a>
+
+                    <a href="#servicos" class="btn-secundario">
+                        Ver serviços
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section id="servicos" class="servicos">
+
+            <p class="subtitulo">NOSSOS SERVIÇOS</p>
+
+            <h2>
+                Cuidado masculino
+                <span>do seu jeito.</span>
+            </h2>
+
+            <div class="servicos-grid">
+
+                <div class="servico">
+                    <h3>Corte Masculino</h3>
+                    <p>
+                        Cortes clássicos e modernos,
+                        feitos de acordo com seu estilo.
+                    </p>
+
+                    <strong>R$ 15</strong>
+                </div>
+
+                <div class="servico">
+                    <h3>Barba</h3>
+                    <p>
+                        Modelagem e acabamento para
+                        deixar sua barba impecável.
+                    </p>
+
+                    <strong>R$ 10</strong>
+                </div>
+
+                <div class="servico">
+                    <h3>Corte + Barba</h3>
+                    <p>
+                        O combo completo para sair
+                        da barbearia renovado.
+                    </p>
+
+                    <strong>R$ 30</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section id="sobre" class="sobre">
+
+            <div>
+                <p class="subtitulo">BARBEARIA IMPERIAL</p>
+
+                <h2>
+                    Mais que um corte.
+                    <span>Uma experiência.</span>
+                </h2>
+
+                <p>
+                    Um espaço pensado para quem gosta de
+                    cuidar da aparência, relaxar e sair
+                    se sentindo bem.
+                </p>
+            </div>
+
+        </section>
+
+<section class="galeria">
+    <p class="subtitulo">NOSSO TRABALHO</p>
+
+    <h2>Alguns dos nossos <span>cortes.</span></h2>
+
+    <div class="galeria-fotos">
+        <img src="imagem png1.jpg" alt="Corte realizado pela Barbearia Imperial">
+
+        <img src="imagem png2.jpg" alt="Corte realizado pela Barbearia Imperial">
+    </div>
+</section>
+        <section id="agendamento" class="agendamento">
+
+            <p class="subtitulo">AGENDAMENTO</p>
+
+            <h2>
+                Reserve seu
+                <span>horário.</span>
+            </h2>
+
+            <p>
+                Entre em contato e marque seu próximo corte.
+            </p>
+
+<p>
+    Entre em contato e marque seu próximo corte.
+</p>
+
+<a href="https://wa.me/5582988835803" class="btn-principal" target="_blank">
+    Agendar pelo WhatsApp
+</a>
+
+</section>
+    Agendar pelo WhatsApp
+</a>" class="btn-principal">
+                Agendar pelo WhatsApp
+            </a> 
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <div class="logo">
+            BARBEARIA <span>IMPERIAL</span>
+        </div>
+
+        <p>
+            Estilo, precisão e tradição.
+        </p>
+
+        <p>
+            © 2026 Barbearia Imperial
+        </p>
+
+    </footer>
+
+    <script>
+    const botaoMenu = document.querySelector('.menu-mobile');
+    const menu = document.querySelector('header nav');
+
+    botaoMenu.addEventListener('click', function() {
+        menu.classList.toggle('menu-aberto');
+    });
+</script>
+</body>
+
+</html>
