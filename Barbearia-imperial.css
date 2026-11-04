@@ -360,3 +360,66 @@ min-width: 140px;
 }
 }
 
+
+/* BARBEARIA IMPERIAL 2.0 — AGENDAMENTO */
+
+.agendamento {
+    padding: 90px 20px;
+    text-align: center;
+}
+
+#formAgendamento {
+    max-width: 520px;
+    margin: 35px auto 0;
+    padding: 32px;
+    background: #151515;
+    border: 1px solid #8b6b2e;
+    border-radius: 16px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#formAgendamento label {
+    color: #e8c77b;
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+#formAgendamento input,
+#formAgendamento select {
+    width: 100%;
+    padding: 14px;
+    background: #222;
+    color: #fff;
+    border: 1px solid #555;
+    border-radius: 8px;
+    font: inherit;
+    box-sizing: border-box;
+}
+
+#formAgendamento input:focus,
+#formAgendamento select:focus {
+    outline: 2px solid #d4af37;
+    border-color: #d4af37;
+}
+
+#formAgendamento button {
+    margin-top: 16px;
+    width: 100%;
+    cursor: pointer;
+    border: none;
+}
+
+.aviso-agendamento {
+    margin-top: 20px;
+    color: #aaa;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+    #formAgendamento {
+        padding: 22px 18px;
+    }
+}
