@@ -423,3 +423,51 @@ min-width: 140px;
         padding: 22px 18px;
     }
 }
+
+/* BARBEARIA IMPERIAL 2.0 — EFEITOS VISUAIS */
+
+/* Transições suaves */
+.servico,
+.btn-principal,
+.btn-secundario,
+.galeria-fotos img {
+    transition: transform 0.4s ease,
+                box-shadow 0.4s ease,
+                filter 0.4s ease;
+}
+
+/* Cartões com profundidade 3D */
+@media (hover: hover) {
+    .servico:hover {
+        transform: perspective(900px)
+                   rotateX(4deg)
+                   rotateY(-4deg)
+                   translateY(-8px);
+
+        box-shadow: 0 18px 45px rgba(212, 175, 55, 0.18);
+    }
+
+    /* Fotos com zoom suave */
+    .galeria-fotos img:hover {
+        transform: scale(1.04);
+        filter: brightness(1.12);
+    }
+
+    /* Botões com iluminação dourada */
+    .btn-principal:hover,
+    .btn-secundario:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 28px rgba(212, 175, 55, 0.25);
+    }
+}
+
+/* Acessibilidade */
+@media (prefers-reduced-motion: reduce) {
+    .servico,
+    .btn-principal,
+    .btn-secundario,
+    .galeria-fotos img {
+        transition: none;
+        transform: none;
+    }
+}
