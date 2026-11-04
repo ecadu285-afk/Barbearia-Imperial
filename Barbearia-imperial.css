@@ -471,3 +471,26 @@ min-width: 140px;
         transform: none;
     }
 }
+
+/* ANIMAÇÕES DE ENTRADA */
+
+@media (prefers-reduced-motion: no-preference) {
+    .animar-entrada {
+        opacity: 0;
+        transform: translateY(35px);
+        transition: opacity 0.8s ease,
+                    transform 0.8s ease;
+    }
+
+    .animar-entrada.visivel {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .animar-entrada {
+        opacity: 1;
+        transform: none;
+    }
+}
