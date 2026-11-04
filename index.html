@@ -179,33 +179,49 @@
 
         </section>
 
-    </main>
 
+<section id="agendamento" class="agendamento">
+    <p class="subtitulo">AGENDAMENTO</p>
 
-    <footer>
+    <h2>
+        Reserve seu <span>horário.</span>
+    </h2>
 
-        <div class="logo">
-            BARBEARIA <span>IMPERIAL</span>
-        </div>
+    <p>
+        Escolha seu serviço e solicite seu agendamento.
+    </p>
 
-        <p>
-            Estilo, precisão e tradição.
-        </p>
+    <form id="formAgendamento">
+        <label for="nomeCliente">Seu nome</label>
+        <input
+            type="text"
+            id="nomeCliente"
+            placeholder="Digite seu nome"
+            required
+        >
 
-        <p>
-            © 2026 Barbearia Imperial
-        </p>
+        <label for="servicoCliente">Serviço desejado</label>
+        <select id="servicoCliente" required>
+            <option value="">Selecione um serviço</option>
+            <option value="Corte Masculino">Corte Masculino</option>
+            <option value="Barba">Barba</option>
+            <option value="Corte + Barba">Corte + Barba</option>
+        </select>
 
-    </footer>
+        <label for="dataCliente">Data desejada</label>
+        <input type="date" id="dataCliente" required>
 
-    <script>
-    const botaoMenu = document.querySelector('.menu-mobile');
-    const menu = document.querySelector('header nav');
+        <label for="horaCliente">Horário desejado</label>
+        <input type="time" id="horaCliente" required>
 
-    botaoMenu.addEventListener('click', function() {
-        menu.classList.toggle('menu-aberto');
-    });
-</script>
-</body>
+        <button type="submit" class="btn-principal">
+            Solicitar pelo WhatsApp
+        </button>
+    </form>
 
-</html>
+    <p class="aviso-agendamento">
+        O horário será confirmado pela barbearia.
+    </p>
+</section>
+</main>
+        
