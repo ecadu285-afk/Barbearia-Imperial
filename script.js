@@ -1,7 +1,13 @@
 
 document.addEventListener("DOMContentLoaded", () => {
-    console.log("Barbearia Imperial 2.0 iniciada!");
+    const botaoMenu = document.querySelector(".menu-mobile");
+    const menu = document.querySelector("header nav");
 
-    // Aqui vamos desenvolver as animações,
-    // interações 3D e sistema de agendamento.
+    if (botaoMenu && menu) {
+        botaoMenu.addEventListener("click", () => {
+            menu.classList.toggle("menu-aberto");
+        });
+    }
+
+    console.log("Barbearia Imperial 2.0 carregada!");
 });
