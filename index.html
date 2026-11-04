@@ -1,241 +1,85 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Barbearia Imperial</title>
-
-    <link rel="stylesheet"
-        href="Barbearia-imperial.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0b0b">
+  <meta name="description" content="Barbearia Imperial: cortes masculinos, barba e atendimento com estilo. Conheça os serviços e solicite seu horário pelo WhatsApp.">
+  <title>Barbearia Imperial | Estilo, precisão e tradição</title>
+  <link rel="stylesheet" href="Barbearia-imperial.css">
+  <script src="script.js" defer></script>
 </head>
-
 <body>
+  <a class="pular-conteudo" href="#inicio">Pular para o conteúdo</a>
+  <header class="cabecalho" id="topo">
+    <a class="logo" href="#inicio" aria-label="Barbearia Imperial, início">BARBEARIA <span>IMPERIAL</span></a>
+    <nav id="menu-principal" class="navegacao" aria-label="Navegação principal">
+      <a href="#inicio">Início</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#agendamento">Contato</a>
+    </nav>
+    <a href="#agendamento" class="btn-agendar">Agendar horário</a>
+    <button class="menu-mobile" type="button" aria-label="Abrir menu" aria-controls="menu-principal" aria-expanded="false"><span aria-hidden="true">☰</span></button>
+  </header>
 
-    <header>
-        <div class="logo">
-            BARBEARIA <span>IMPERIAL</span>
+  <main>
+    <section id="inicio" class="hero" aria-labelledby="titulo-principal">
+      <div class="hero-brilho" aria-hidden="true"></div>
+      <div class="hero-text">
+        <p class="subtitulo">ESTILO • PRECISÃO • TRADIÇÃO</p>
+        <h1 id="titulo-principal">Seu estilo começa <span>na cadeira.</span></h1>
+        <p class="hero-descricao">Cortes modernos, barba e aquele acabamento impecável para você sair daqui renovado.</p>
+        <div class="hero-buttons">
+          <a href="#agendamento" class="btn-principal">Agendar horário <span aria-hidden="true">↗</span></a>
+          <a href="#servicos" class="btn-secundario">Conhecer serviços</a>
         </div>
+        <div class="hero-detalhe"><span></span> UMA EXPERIÊNCIA IMPERIAL</div>
+      </div>
+      <div class="hero-ornamento" aria-hidden="true"><div class="hero-anel"><span>BI</span></div></div>
+    </section>
 
-        <nav>
-            <a href="#inicio">Início</a>
-            <a href="#servicos">Serviços</a>
-            <a href="#sobre">Sobre</a>
-            <a href="#contato">Contato</a>
-        </nav>
+    <section id="servicos" class="secao servicos" aria-labelledby="titulo-servicos">
+      <div class="secao-topo reveal">
+        <p class="subtitulo">NOSSOS SERVIÇOS</p>
+        <h2 id="titulo-servicos">Cuidado masculino <span>do seu jeito.</span></h2>
+        <p class="secao-descricao">Do clássico ao moderno, cada detalhe faz diferença.</p>
+      </div>
+      <div class="servicos-grid">
+        <article class="servico reveal"><div class="servico-numero">01 / PRECISÃO</div><h3>Corte Masculino</h3><p>Cortes clássicos e modernos, feitos de acordo com seu estilo.</p><div class="servico-rodape"><strong>R$ 15</strong><a href="#agendamento" data-servico="Corte Masculino">Agendar <span aria-hidden="true">↗</span></a></div></article>
+        <article class="servico reveal"><div class="servico-numero">02 / CUIDADO</div><h3>Barba</h3><p>Modelagem e acabamento para deixar sua barba impecável.</p><div class="servico-rodape"><strong>R$ 10</strong><a href="#agendamento" data-servico="Barba">Agendar <span aria-hidden="true">↗</span></a></div></article>
+        <article class="servico reveal"><div class="servico-numero">03 / EXPERIÊNCIA</div><h3>Corte + Barba</h3><p>O combo completo para sair da barbearia renovado.</p><div class="servico-rodape"><strong>R$ 30</strong><a href="#agendamento" data-servico="Corte + Barba">Agendar <span aria-hidden="true">↗</span></a></div></article>
+      </div>
+    </section>
 
-        <a href="#agendamento" class="btn-agendar">
-            Agendar horário
-        </a>
+    <section id="sobre" class="secao sobre" aria-labelledby="titulo-sobre">
+      <div class="sobre-detalhe reveal" aria-hidden="true"><span>IMPERIAL</span><small>ESTILO & TRADIÇÃO</small></div>
+      <div class="sobre-conteudo reveal"><p class="subtitulo">BARBEARIA IMPERIAL</p><h2 id="titulo-sobre">Mais que um corte. <span>Uma experiência.</span></h2><p>Um espaço pensado para quem gosta de cuidar da aparência, relaxar e sair se sentindo bem.</p><a class="link-dourado" href="#agendamento">Garanta seu próximo horário <span aria-hidden="true">↗</span></a></div>
+    </section>
 
-<button class="menu-mobile" aria-label="Abrir menu">
-    ☰
-</button>
+    <section id="galeria" class="secao galeria" aria-labelledby="titulo-galeria">
+      <div class="secao-topo reveal"><p class="subtitulo">NOSSO TRABALHO</p><h2 id="titulo-galeria">Alguns dos nossos <span>cortes.</span></h2><p class="secao-descricao">Confira os detalhes. Clique em uma foto para ampliar.</p></div>
+      <div class="galeria-fotos">
+        <button class="foto-botao reveal" type="button" data-imagem="imagem png1.jpg" data-legenda="Corte realizado pela Barbearia Imperial" aria-label="Ampliar primeira foto de corte"><img src="imagem png1.jpg" alt="Primeiro corte realizado pela Barbearia Imperial" loading="lazy" decoding="async"><span class="foto-overlay">AMPLIAR FOTO <span aria-hidden="true">↗</span></span></button>
+        <button class="foto-botao reveal" type="button" data-imagem="imagem png2.jpg" data-legenda="Corte realizado pela Barbearia Imperial" aria-label="Ampliar segunda foto de corte"><img src="imagem png2.jpg" alt="Segundo corte realizado pela Barbearia Imperial" loading="lazy" decoding="async"><span class="foto-overlay">AMPLIAR FOTO <span aria-hidden="true">↗</span></span></button>
+      </div>
+    </section>
 
-</header>
+    <section id="agendamento" class="secao agendamento" aria-labelledby="titulo-agendamento">
+      <div class="secao-topo reveal"><p class="subtitulo">AGENDAMENTO</p><h2 id="titulo-agendamento">Reserve seu <span>horário.</span></h2><p class="secao-descricao">Preencha os dados e envie sua solicitação pelo WhatsApp.</p></div>
+      <form id="formAgendamento" class="reveal">
+        <div class="campo"><label for="nomeCliente">Seu nome</label><input id="nomeCliente" name="nome" type="text" autocomplete="name" maxlength="80" placeholder="Digite seu nome" required></div>
+        <div class="campo"><label for="servicoCliente">Serviço desejado</label><select id="servicoCliente" name="servico" required><option value="">Selecione um serviço</option><option value="Corte Masculino">Corte Masculino — R$ 15</option><option value="Barba">Barba — R$ 10</option><option value="Corte + Barba">Corte + Barba — R$ 30</option></select></div>
+        <div class="form-linha"><div class="campo"><label for="dataCliente">Data desejada</label><input id="dataCliente" name="data" type="date" required></div><div class="campo"><label for="horaCliente">Horário desejado</label><input id="horaCliente" name="hora" type="time" required></div></div>
+        <button class="btn-principal botao-enviar" type="submit">Solicitar pelo WhatsApp <span aria-hidden="true">↗</span></button>
+        <p class="aviso-agendamento">O envio abre o WhatsApp. O horário só estará confirmado após a resposta da barbearia.</p>
+      </form>
+    </section>
+  </main>
 
+  <footer class="rodape"><a class="logo" href="#inicio">BARBEARIA <span>IMPERIAL</span></a><p>Estilo, precisão e tradição.</p><p>© <span id="ano-atual">2026</span> Barbearia Imperial.</p><a href="#topo" class="voltar-topo">Voltar ao topo ↑</a></footer>
 
-
-    <main>
-
-        <section id="inicio" class="hero">
-
-            <div class="hero-text">
-
-                <p class="subtitulo">
-                    ESTILO • PRECISÃO • TRADIÇÃO
-                </p>
-
-                <h1>
-                    Seu estilo começa
-                    <span>na cadeira.</span>
-                </h1>
-
-                <p>
-                    Cortes modernos, barba e aquele acabamento
-                    impecável para você sair daqui renovado.
-                </p>
-
-                <div class="hero-buttons">
-
-                    <a href="#agendamento" class="btn-principal">
-                        Agendar horário
-                    </a>
-
-                    <a href="#servicos" class="btn-secundario">
-                        Ver serviços
-                    </a>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <section id="servicos" class="servicos">
-
-            <p class="subtitulo">NOSSOS SERVIÇOS</p>
-
-            <h2>
-                Cuidado masculino
-                <span>do seu jeito.</span>
-            </h2>
-
-            <div class="servicos-grid">
-
-                <div class="servico">
-                    <h3>Corte Masculino</h3>
-                    <p>
-                        Cortes clássicos e modernos,
-                        feitos de acordo com seu estilo.
-                    </p>
-
-                    <strong>R$ 15</strong>
-                </div>
-
-                <div class="servico">
-                    <h3>Barba</h3>
-                    <p>
-                        Modelagem e acabamento para
-                        deixar sua barba impecável.
-                    </p>
-
-                    <strong>R$ 10</strong>
-                </div>
-
-                <div class="servico">
-                    <h3>Corte + Barba</h3>
-                    <p>
-                        O combo completo para sair
-                        da barbearia renovado.
-                    </p>
-
-                    <strong>R$ 30</strong>
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <section id="sobre" class="sobre">
-
-            <div>
-                <p class="subtitulo">BARBEARIA IMPERIAL</p>
-
-                <h2>
-                    Mais que um corte.
-                    <span>Uma experiência.</span>
-                </h2>
-
-                <p>
-                    Um espaço pensado para quem gosta de
-                    cuidar da aparência, relaxar e sair
-                    se sentindo bem.
-                </p>
-            </div>
-
-        </section>
-
-<section class="galeria">
-    <p class="subtitulo">NOSSO TRABALHO</p>
-
-    <h2>Alguns dos nossos <span>cortes.</span></h2>
-
-    <div class="galeria-fotos">
-        <img src="imagem png1.jpg" alt="Corte realizado pela Barbearia Imperial">
-
-        <img src="imagem png2.jpg" alt="Corte realizado pela Barbearia Imperial">
-    </div>
-</section>
-        <section id="agendamento" class="agendamento">
-
-            <p class="subtitulo">AGENDAMENTO</p>
-
-            <h2>
-                Reserve seu
-                <span>horário.</span>
-            </h2>
-
-            <p>
-                Entre em contato e marque seu próximo corte.
-            </p>
-
-<p>
-    Entre em contato e marque seu próximo corte.
-</p>
-
-<a href="https://wa.me/5582988835803" class="btn-principal" target="_blank">
-    Agendar pelo WhatsApp
-</a>
-
-</section>
-    Agendar pelo WhatsApp
-</a>" class="btn-principal">
-                Agendar pelo WhatsApp
-            </a> 
-
-        </section>
-
-
-<section id="agendamento" class="agendamento">
-    <p class="subtitulo">AGENDAMENTO</p>
-
-    <h2>
-        Reserve seu <span>horário.</span>
-    </h2>
-
-    <p>
-        Escolha seu serviço e solicite seu agendamento.
-    </p>
-
-    <form id="formAgendamento">
-        <label for="nomeCliente">Seu nome</label>
-        <input
-            type="text"
-            id="nomeCliente"
-            placeholder="Digite seu nome"
-            required
-        >
-
-        <label for="servicoCliente">Serviço desejado</label>
-        <select id="servicoCliente" required>
-            <option value="">Selecione um serviço</option>
-            <option value="Corte Masculino">Corte Masculino</option>
-            <option value="Barba">Barba</option>
-            <option value="Corte + Barba">Corte + Barba</option>
-        </select>
-
-        <label for="dataCliente">Data desejada</label>
-        <input type="date" id="dataCliente" required>
-
-        <label for="horaCliente">Horário desejado</label>
-        <input type="time" id="horaCliente" required>
-
-        <button type="submit" class="btn-principal">
-            Solicitar pelo WhatsApp
-        </button>
-    </form>
-
-    <p class="aviso-agendamento">
-        O horário será confirmado pela barbearia.
-    </p>
-</section>
-</main>
-        
-
-<footer>
-    <div class="logo">
-        BARBEARIA <span>IMPERIAL</span>
-    </div>
-
-    <p>Estilo, precisão e tradição.</p>
-
-    <p>© 2026 Barbearia Imperial</p>
-</footer>
-
-<script src="script.js" defer></script>
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Visualização ampliada da fotografia" aria-hidden="true" hidden><button class="lightbox-fechar" type="button" aria-label="Fechar imagem">×</button><img id="lightbox-imagem" alt=""><p id="lightbox-legenda"></p></div>
 </body>
 </html>
